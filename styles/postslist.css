@@ -1,21 +1,8 @@
-/****************/
-/**** Header ****/
-/****************/
-header {
+body {
   background-color: #ffeedd;
   height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 20px;
   position: relative;
-}
-
-/***********************/
-/**** Media Queries ****/
-/***********************/
-@media only screen and (max-width: 767px) {
-  header {
-    padding: 0;
-  }
 }

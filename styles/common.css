@@ -17,6 +17,11 @@ body {
 /****************/
 /**** Header ****/
 /****************/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 #heading-modal {
   display: flex;
@@ -39,4 +44,13 @@ body {
   font-size: 110%;
   letter-spacing: 1px;
   word-spacing: 5px;
+}
+
+/***********************/
+/**** Media Queries ****/
+/***********************/
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 0;
+  }
 }
