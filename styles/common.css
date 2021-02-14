@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/****************/
+/**** Header ****/
+/****************/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#heading-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+#heading-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+#heading {
+  font-family: 'Montez', cursive;
+  color: blue;
+  font-size: 350%;
+}
+
+#sub-heading {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 110%;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+/***********************/
+/**** Media Queries ****/
+/***********************/
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 0;
+  }
+}
