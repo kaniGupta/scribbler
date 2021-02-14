@@ -7,11 +7,16 @@
 html,
 body {
   background-color: #fff;
+  color: #555;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
+
+/****************/
+/**** Header ****/
+/****************/
 
 header {
   background-image: url('../images/background.jpg');
@@ -56,6 +61,10 @@ header {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+
+/***********************/
+/**** Media Queries ****/
+/***********************/
 
 @media only screen and (max-width: 767px) {
   header {
