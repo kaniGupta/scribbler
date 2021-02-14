@@ -1,0 +1,22 @@
+body {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+
+/****************/
+/***** Post *****/
+/****************/
+.post-edit-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-description {
+  text-align: justify;
+  text-justify: inter-word;
+}
