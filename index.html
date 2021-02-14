@@ -44,32 +44,47 @@
           id="sign-up-btn"
           class="btn btn-primary sign-up-btn"
           data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
+          data-bs-target="#signUpModal"
         >
           Sign Up
         </button>
-        <button id="sign-in-btn" class="btn btn-primary sign-in-btn">
-          Sign Up
+        <button
+          type="button"
+          id="sign-in-btn"
+          class="btn btn-primary sign-in-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#signInModal"
+        >
+          Sign In
         </button>
       </div>
       <div class="action-btn">
-        <button class="btn btn-warning mx-2 px-3 py-2">All Posts</button>
-        <button class="btn btn-warning mx-2 px-3 py-2">Create Posts</button>
+        <a href="./html/bloglist.html" class="btn btn-warning mx-2 px-3 py-2"
+          >All Posts</a
+        >
+        <button
+          type="button"
+          class="btn btn-warning mx-2 px-3 py-2"
+          data-bs-toggle="modal"
+          data-bs-target="#createPostModal"
+        >
+          Create Posts
+        </button>
       </div>
     </header>
 
     <!-- Sign Up Modal -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="signUpModal"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="signUpModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Get Started</h5>
+            <h5 class="modal-title" id="signUpModalLabel">Get Started</h5>
             <button
               type="button"
               class="btn-close"
@@ -80,49 +95,160 @@
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
+                <label for="signup-name" class="form-label">Name</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="name"
+                  id="signup-name"
                   placeholder="Enter your name"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
+                <label for="signup-username" class="form-label">Username</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="username"
+                  id="signup-username"
                   placeholder="Enter your username"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
+                <label for="signup-password" class="form-label">Password</label>
                 <input
                   type="password"
                   class="form-control"
-                  id="password"
+                  id="signup-password"
                   placeholder="Enter your password"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="confirm-password" class="form-label">
+                <label for="signup-confirm-password" class="form-label">
                   Confirm Password
                 </label>
                 <input
                   type="password"
                   class="form-control"
-                  id="confirm-password"
+                  id="signup-confirm-password"
                   placeholder="Re-enter your password"
                   required
                 />
               </div>
               <div class="d-grid gap-2">
                 <button class="btn btn-success" type="button">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div
+      class="modal fade"
+      id="signInModal"
+      tabindex="-1"
+      aria-labelledby="signInModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signInModalLabel">Welcome Back!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="signin-username" class="form-label">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="signin-username"
+                  placeholder="Enter your username"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="signin-password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="signin-password"
+                  placeholder="Enter your password"
+                  required
+                />
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-success" type="button">Sign In</button>
+              </div>
+              <p class="mt-3 mb-0 text-center">
+                Not a member?
+                <button
+                  type="button"
+                  class="btn btn-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signUpModal"
+                  data-bs-dismiss="modal"
+                >
+                  Sign Up
+                </button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create Post Modal -->
+    <div
+      class="modal fade"
+      id="createPostModal"
+      tabindex="-1"
+      aria-labelledby="createPostModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createPostModalLabel">Pen Your Post</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="title" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  placeholder="Enter title of your post"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contents" class="form-label">Name</label>
+                <textarea
+                  class="form-control"
+                  placeholder="Enter the content of your post"
+                  id="contents"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="d-grid gap-2 col-3 mx-auto">
+                <button class="btn btn-success" type="button">Create</button>
               </div>
             </form>
           </div>
