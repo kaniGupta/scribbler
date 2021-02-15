@@ -1,5 +1,21 @@
 const deletePostOne = () => {
-  document.getElementById('postModal1').remove();
+  document.getElementById('post_one').remove();
+};
+
+const deletePostTwo = () => {
+  document.getElementById('post_two').remove();
+};
+
+const deletePostThree = () => {
+  document.getElementById('post_three').remove();
+};
+
+const deletePostFour = () => {
+  document.getElementById('post_four').remove();
+};
+
+const deletePostFive = () => {
+  document.getElementById('post_five').remove();
 };
 
 const showPostOne = () => {
