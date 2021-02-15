@@ -1,3 +1,7 @@
+const deletePostOne = () => {
+  document.getElementById('postModal1').remove();
+};
+
 const showPostOne = () => {
   const username = document.getElementById('post_1_username').innerHTML;
   const title = document.getElementById('post_1_title').innerHTML;
