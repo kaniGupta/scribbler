@@ -74,6 +74,23 @@
       <a href="#" class="btn btn-danger" onclick="onLikeBtnClicked()">Like</a>
       <p id="like_status" class="py-2"></p>
     </section>
+    <section class="container">
+      <div class="row">
+        <textarea
+          name="comment_box"
+          id="comment_box"
+          rows="5"
+          placeholder="Leave a comment..."
+          class="p-3"
+          style="max-width: 98%; margin: 0 auto; outline: none"
+        ></textarea>
+      </div>
+      <button class="btn btn-danger my-3" onclick="onCommentBtnClicked()">
+        Comment
+      </button>
+      <p style="font-weight: bold">All Comments</p>
+      <div id="user_comments"></div>
+    </section>
 
     <!-- Bootstrap JS -->
     <script

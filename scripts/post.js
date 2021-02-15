@@ -1,4 +1,5 @@
 let likeCount = 0;
+const comments = [];
 
 const loadData = () => {
   const username = sessionStorage.getItem('username');
@@ -17,6 +18,22 @@ const onLikeBtnClicked = () => {
   document.getElementById(
     'like_status'
   ).innerHTML = `${likeCount} person likes this!`;
+};
+
+const onCommentBtnClicked = () => {
+  comments.push(document.getElementById('comment_box').value);
+
+  if (comments && comments.length > 0) {
+    let userComments = [];
+
+    comments.forEach((el) => {
+      userComments.push(
+        `<div class="card mb-2"><div class="card-body">${el}</div></div>`
+      );
+    });
+
+    document.getElementById('user_comments').innerHTML = userComments.join(' ');
+  }
 };
 
 loadData();
