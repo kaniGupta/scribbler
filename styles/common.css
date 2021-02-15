@@ -37,6 +37,7 @@ header {
   font-family: 'Montez', cursive;
   color: blue;
   font-size: 350%;
+  cursor: pointer;
 }
 
 #sub-heading {
