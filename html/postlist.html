@@ -66,7 +66,7 @@
       <div class="card mb-3 post-border" style="max-width: 540px">
         <div class="row g-0" style="height: 100%">
           <div class="col-md-2 post-author">
-            <p>Srishti Gupta</p>
+            <p id="post_1_username">Srishti Gupta</p>
           </div>
           <div class="col-md-10">
             <div class="card-body post-description">
@@ -76,22 +76,20 @@
                 data-bs-toggle="modal"
                 data-bs-target="#postModal"
               ></i>
-              <i class="fa fa-ellipsis-h icon-ellipsis" aria-hidden="true"></i>
-              <h5 class="card-title">
+              <i
+                class="fa fa-ellipsis-h icon-ellipsis"
+                aria-hidden="true"
+                onclick="showPostOne()"
+              ></i>
+              <h5 class="card-title" id="post_1_title">
                 ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
-                <span>
-                  <!-- TODO: Include Font Awesome icon for delete icon here -->
-                </span>
               </h5>
-              <p class="card-text">
+              <p class="card-text" id="post_1_summary">
                 Since JavaScript does not have any type-checking, either of
                 these keywords can be used to declare a variable of any type
                 (datatype) in JavaScript. Though all the three keywords are used
                 for the same purpose, they are different.
               </p>
-              <span>
-                <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-              </span>
             </div>
           </div>
         </div>
@@ -102,7 +100,7 @@
       <div class="card mb-3 post-border" style="max-width: 540px">
         <div class="row g-0" style="height: 100%">
           <div class="col-md-2 post-author">
-            <p>Colby Fayock</p>
+            <p id="post_2_username">Colby Fayock</p>
           </div>
           <div class="col-md-10">
             <div class="card-body post-description">
@@ -112,21 +110,19 @@
                 data-bs-toggle="modal"
                 data-bs-target="#postModal"
               ></i>
-              <i class="fa fa-ellipsis-h icon-ellipsis" aria-hidden="true"></i>
-              <h5 class="card-title">
+              <i
+                class="fa fa-ellipsis-h icon-ellipsis"
+                aria-hidden="true"
+                onclick="showPostTwo()"
+              ></i>
+              <h5 class="card-title" id="post_2_title">
                 What is linting and how can it save you time?
-                <span>
-                  <!-- TODO: Include Font Awesome icon for delete icon here -->
-                </span>
               </h5>
-              <p class="card-text">
+              <p class="card-text" id="post_2_summary">
                 One of the biggest challenges in software development is time.
                 It’s something we can’t easily get more of, but linting can help
                 us make the most out of the time we have.
               </p>
-              <span>
-                <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-              </span>
             </div>
           </div>
         </div>
@@ -137,7 +133,7 @@
       <div class="card mb-3 post-border" style="max-width: 540px">
         <div class="row g-0" style="height: 100%">
           <div class="col-md-2 post-author">
-            <p>Yazeed Bzadough</p>
+            <p id="post_3_username">Yazeed Bzadough</p>
           </div>
           <div class="col-md-10">
             <div class="card-body post-description">
@@ -147,22 +143,20 @@
                 data-bs-toggle="modal"
                 data-bs-target="#postModal"
               ></i>
-              <i class="fa fa-ellipsis-h icon-ellipsis" aria-hidden="true"></i>
-              <h5 class="card-title">
+              <i
+                class="fa fa-ellipsis-h icon-ellipsis"
+                aria-hidden="true"
+                onclick="showPostThree()"
+              ></i>
+              <h5 class="card-title" id="post_3_title">
                 How to Get More Views on Your Tech Blog
-                <span>
-                  <!-- TODO: Include Font Awesome icon for delete icon here -->
-                </span>
               </h5>
-              <p class="card-text">
+              <p class="card-text" id="post_3_summary">
                 If you're a developer with a Twitter account, you've already
                 seen everyone and their cat start a blog, YouTube channel, or
                 Patreon. We all want to become stars, or at the very least, a
                 recognizable name in the industry.
               </p>
-              <span>
-                <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-              </span>
             </div>
           </div>
         </div>
@@ -173,7 +167,7 @@
       <div class="card mb-3 post-border" style="max-width: 540px">
         <div class="row g-0" style="height: 100%">
           <div class="col-md-2 post-author">
-            <p>Cedd Burge</p>
+            <p id="post_4_username">Cedd Burge</p>
           </div>
           <div class="col-md-10">
             <div class="card-body post-description">
@@ -183,23 +177,21 @@
                 data-bs-toggle="modal"
                 data-bs-target="#postModal"
               ></i>
-              <i class="fa fa-ellipsis-h icon-ellipsis" aria-hidden="true"></i>
-              <h5 class="card-title">
+              <i
+                class="fa fa-ellipsis-h icon-ellipsis"
+                aria-hidden="true"
+                onclick="showPostFour()"
+              ></i>
+              <h5 class="card-title" id="post_4_title">
                 How to write easily describable code
-                <span>
-                  <!-- TODO: Include Font Awesome icon for delete icon here -->
-                </span>
               </h5>
-              <p class="card-text">
+              <p class="card-text" id="post_4_summary">
                 When code is not describable using words, most people have to do
                 some mental mapping to turn it in to words. This wastes mental
                 energy, and you run the risk of getting the mapping wrong.
                 Different people will map to different words, which leads to
                 confusion when discussing the code.
               </p>
-              <span>
-                <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-              </span>
             </div>
           </div>
         </div>
@@ -210,7 +202,7 @@
       <div class="card mb-3 post-border" style="max-width: 540px">
         <div class="row g-0" style="height: 100%">
           <div class="col-md-2 post-author">
-            <p>Srishti Gupta</p>
+            <p id="post_5_username">Srishti Gupta</p>
           </div>
           <div class="col-md-10">
             <div class="card-body post-description">
@@ -220,22 +212,20 @@
                 data-bs-toggle="modal"
                 data-bs-target="#postModal"
               ></i>
-              <i class="fa fa-ellipsis-h icon-ellipsis" aria-hidden="true"></i>
-              <h5 class="card-title">
+              <i
+                class="fa fa-ellipsis-h icon-ellipsis"
+                aria-hidden="true"
+                onclick="showPostFive()"
+              ></i>
+              <h5 class="card-title" id="post_5_title">
                 Everything you should know about ‘module’ & ‘require’ in Node.js
-                <span>
-                  <!-- TODO: Include Font Awesome icon for delete icon here -->
-                </span>
               </h5>
-              <p class="card-text">
+              <p class="card-text" id="post_5_summary">
                 Node.js treats each JavaScript file as a separate module. For
                 instance, if you have a file containing some code and this file
                 is named xyz.js, then this file is treated as a module in Node,
                 and you can say that you’ve created a module named xyz.
               </p>
-              <span>
-                <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-              </span>
             </div>
           </div>
         </div>
@@ -280,6 +270,6 @@
     ></script>
     <!-- Project JS -->
     <script src="../scripts/common.js"></script>
-    <script src="../scripts/index.js"></script>
+    <script src="../scripts/postslist.js"></script>
   </body>
 </html>
