@@ -64,12 +64,19 @@
     <section id="main-post" class="mt-5 mx-5 main-post">
       <!-- post 1 starts here -->
       <div class="card mb-3 post-border" style="max-width: 540px">
-        <div class="row g-0">
+        <div class="row g-0" style="height: 100%">
           <div class="col-md-2 post-author">
             <p>Srishti Gupta</p>
           </div>
           <div class="col-md-10">
             <div class="card-body post-description">
+              <i
+                class="fa fa-trash icon-trash"
+                aria-hidden="true"
+                data-bs-toggle="modal"
+                data-bs-target="#postModal"
+              ></i>
+              <i class="fa fa-ellipsis-h icon-ellipsis" aria-hidden="true"></i>
               <h5 class="card-title">
                 ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
                 <span>
@@ -93,12 +100,19 @@
 
       <!-- post 2 starts here -->
       <div class="card mb-3 post-border" style="max-width: 540px">
-        <div class="row g-0">
+        <div class="row g-0" style="height: 100%">
           <div class="col-md-2 post-author">
             <p>Colby Fayock</p>
           </div>
           <div class="col-md-10">
             <div class="card-body post-description">
+              <i
+                class="fa fa-trash icon-trash"
+                aria-hidden="true"
+                data-bs-toggle="modal"
+                data-bs-target="#postModal"
+              ></i>
+              <i class="fa fa-ellipsis-h icon-ellipsis" aria-hidden="true"></i>
               <h5 class="card-title">
                 What is linting and how can it save you time?
                 <span>
@@ -121,12 +135,19 @@
 
       <!-- post 3 starts here -->
       <div class="card mb-3 post-border" style="max-width: 540px">
-        <div class="row g-0">
+        <div class="row g-0" style="height: 100%">
           <div class="col-md-2 post-author">
             <p>Yazeed Bzadough</p>
           </div>
           <div class="col-md-10">
             <div class="card-body post-description">
+              <i
+                class="fa fa-trash icon-trash"
+                aria-hidden="true"
+                data-bs-toggle="modal"
+                data-bs-target="#postModal"
+              ></i>
+              <i class="fa fa-ellipsis-h icon-ellipsis" aria-hidden="true"></i>
               <h5 class="card-title">
                 How to Get More Views on Your Tech Blog
                 <span>
@@ -150,12 +171,19 @@
 
       <!-- post 4 starts here -->
       <div class="card mb-3 post-border" style="max-width: 540px">
-        <div class="row g-0">
+        <div class="row g-0" style="height: 100%">
           <div class="col-md-2 post-author">
             <p>Cedd Burge</p>
           </div>
           <div class="col-md-10">
             <div class="card-body post-description">
+              <i
+                class="fa fa-trash icon-trash"
+                aria-hidden="true"
+                data-bs-toggle="modal"
+                data-bs-target="#postModal"
+              ></i>
+              <i class="fa fa-ellipsis-h icon-ellipsis" aria-hidden="true"></i>
               <h5 class="card-title">
                 How to write easily describable code
                 <span>
@@ -180,12 +208,19 @@
 
       <!-- post 5 starts here -->
       <div class="card mb-3 post-border" style="max-width: 540px">
-        <div class="row g-0">
+        <div class="row g-0" style="height: 100%">
           <div class="col-md-2 post-author">
             <p>Srishti Gupta</p>
           </div>
           <div class="col-md-10">
             <div class="card-body post-description">
+              <i
+                class="fa fa-trash icon-trash"
+                aria-hidden="true"
+                data-bs-toggle="modal"
+                data-bs-target="#postModal"
+              ></i>
+              <i class="fa fa-ellipsis-h icon-ellipsis" aria-hidden="true"></i>
               <h5 class="card-title">
                 Everything you should know about ‘module’ & ‘require’ in Node.js
                 <span>
@@ -207,6 +242,35 @@
       </div>
       <!-- post 5 ends here -->
     </section>
+
+    <!-- Create Post Modal -->
+    <div
+      class="modal fade"
+      id="postModal"
+      tabindex="-1"
+      aria-labelledby="postModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p class="row fs-5 text-center py-2 px-5">
+              Are you sure you want to delete this post?
+            </p>
+            <div class="post-modal-btn-group">
+              <button class="btn btn-success" type="button">Yes</button>
+              <button
+                class="btn btn-danger"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script
